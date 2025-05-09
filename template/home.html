@@ -1,0 +1,54 @@
+{% load static %}
+<!-- ../static/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'header.css' %}" />
+  </head>
+  <body>
+    <header class="">
+      <div class="droplistdiv">
+        <button class="dropbutton">
+          <img src="{% static 'hamburger-menu.svg' %}" alt="" />
+        </button>
+      </div>
+      <div class="searchdiv">
+        <input type="text" placeholder="Search" class="inputsearch" />
+        <button id="fork">
+          <img src="{% static 'search.svg' %}" alt="searchimg" />
+        </button>
+      </div>
+      <div class="logindiv">
+        <button class="nightbutton">
+          <div class="night">
+            <img src="{% static 'night.jpg' %}" class="nighty" />
+          </div>
+        </button>
+
+        <div class="login">
+          <button>
+            {% if user.is_authenticated %} <a href="logout">logout</a> {% else%}
+            <a href="login"
+              ><p style="vertical-align: top; color: white">
+                login or sign up
+              </p></a
+            >
+            {%endif %}
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>welcome to our homepage!</h1>
+      {% if user.is_authenticated %}
+      <h1>have a nice day {{user.username}}</h1>
+      {% endif %}
+    </main>
+    <div></div>
+
+    <script src="{% static 'js/javascript.js'%}"></script>
+  </body>
+</html>

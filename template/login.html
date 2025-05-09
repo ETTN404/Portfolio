@@ -1,0 +1,13 @@
+{% load static %}
+<form method="POST" action="login">
+  {% csrf_token %}
+  <p>username</p>
+  <input type="text" name="username" />
+  <p>password</p>
+  <input type="password" name="password" />
+  <input type="submit" />
+</form>
+<p>if you dont have an account <a href="register">register</a></p>
+<script src="{% static 'js/javascript.js'%}"></script>
+
+{% for message in messages %} {{message}} {% endfor %}

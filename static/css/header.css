@@ -1,0 +1,108 @@
+header {
+  display: flex;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  justify-content: center;
+}
+.droplistdiv {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.searchdiv {
+  display: flex;
+  flex: 7;
+  align-items: center;
+  justify-content: center;
+}
+.logindiv {
+  flex: 1;
+  display: flex;
+}
+.dropbutton {
+  height: 55px;
+  cursor: pointer;
+  width: 55px;
+  margin-left: 33px;
+  background-color: white;
+  border-style: none;
+}
+.inputsearch {
+  height: 40px;
+  border-radius: 26px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  width: 85%;
+  padding-left: 22px;
+  color: black;
+}
+body {
+  height: 2444px;
+  padding-top: 55px;
+  background-color: azure;
+}
+.nightbutton {
+  background-color: rgba(200, 197, 197, 0);
+  border-style: none;
+}
+.searchdiv button {
+  height: 40px;
+  width: 055px;
+  margin-left: -60px;
+  border-width: 1px;
+  border-color: grey;
+  background-color: white;
+  border-radius: 26px;
+  border-style: none;
+}
+.searchdiv button img {
+  opacity: 0.23;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.inputsearch::placeholder {
+  font-size: 22px;
+  font-weight: lighter;
+  color: rgb(189, 185, 185);
+}
+button .night {
+  height: 40px;
+  width: 56px;
+  border-radius: 26px;
+  border-style: none;
+  cursor: pointer;
+  margin-top: 4px;
+}
+.login,
+.night {
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+}
+.login button {
+  vertical-align: center;
+  max-height: 45px;
+  min-width: 90px;
+  flex: 3;
+  cursor: pointer;
+  border-radius: 26px;
+  border-style: none;
+  margin-left: 22px;
+  margin-top: 4px;
+  color: white;
+  background-color: rgb(6, 117, 245);
+  font-weight: bolder;
+}
+.nighty {
+  object-fit: contain;
+}
+h1 {
+  text-align: center;
+  font-size: 80px;
+}
